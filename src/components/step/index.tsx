@@ -9,10 +9,10 @@ type Props = {
   icon: React.ComponentType<IconProps>;
 }
 
-export function Step(props: Props) {
+export function Step({icon: Icon, ...props}: Props) {
   return (
     <View style={s.container}>
-      <props.icon size={32} color={colors.red.base} />
+      <Icon size={32} color={colors.red.base} />
       <View style={s.details}>
         <Text style={s.title}>{props.title}</Text>
         <Text style={s.description}>{props.description}</Text>
