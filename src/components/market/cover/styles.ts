@@ -3,12 +3,13 @@ import { colors, fontFamily } from "@/styles/theme";
 
 export const s = StyleSheet.create({
   container: {
-    maxHeight: 36,
-    position: 'absolute',
-    zIndex: 1
+    width: '100%',
+    height: 232,
+    marginBottom: -32,
+    backgroundColor: colors.gray[200]
   },
-  content: {
-    gap: 8,
-    paddingHorizontal: 24
+  header: {
+    padding: 24,
+    paddingBottom: 56
   }
 })
